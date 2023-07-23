@@ -24,4 +24,8 @@ public class Answer {
     public Question getNextQuestion() {
         return nextQuestion;
     }
+
+    public Question setNextQuestion(Question nextQuestion) {
+        return nextQuestion;
+    }
 }

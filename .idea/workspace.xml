@@ -10,11 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1f0bfcf-82bb-4219-bec8-388f0baf2aef" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ilyoniss/module3final/gameobjects/Answer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ilyoniss/module3final/gameobjects/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ilyoniss/module3final/gameobjects/Quiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/ilyoniss/module3final/gameobjects/QuizTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ilyoniss/module3final/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ilyoniss/module3final/Initial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ilyoniss/module3final/gameobjects/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ilyoniss/module3final/gameobjects/Answer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -50,8 +50,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/JavaRush/Module3/LoggingTesting",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,7 +63,63 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.ilyoniss.module3final.gameobjects" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.QuizTest.testPlayGameWithCorrectAnswer">
+    <configuration name="QuizTest.playGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module3-Final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ilyoniss.module3final.gameobjects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ilyoniss.module3final.gameobjects" />
+      <option name="MAIN_CLASS_NAME" value="com.ilyoniss.module3final.gameobjects.QuizTest" />
+      <option name="METHOD_NAME" value="playGame" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuizTest.testGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module3-Final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ilyoniss.module3final.gameobjects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ilyoniss.module3final.gameobjects" />
+      <option name="MAIN_CLASS_NAME" value="com.ilyoniss.module3final.gameobjects.QuizTest" />
+      <option name="METHOD_NAME" value="testGame" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuizTest.testPlayGameWithCorrectAnswer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Module3-Final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ilyoniss.module3final.gameobjects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ilyoniss.module3final.gameobjects" />
+      <option name="MAIN_CLASS_NAME" value="com.ilyoniss.module3final.gameobjects.QuizTest" />
+      <option name="METHOD_NAME" value="testPlayGameWithCorrectAnswer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.76" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.76" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
         <artifact name="Module3-Final:war exploded">
@@ -147,6 +206,13 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.QuizTest.testPlayGameWithCorrectAnswer" />
+        <item itemvalue="JUnit.QuizTest.testGame" />
+        <item itemvalue="JUnit.QuizTest.playGame" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -158,7 +224,7 @@
       <updated>1690087828045</updated>
       <workItem from="1690087829058" duration="517000" />
       <workItem from="1690088358163" duration="42000" />
-      <workItem from="1690088473180" duration="4653000" />
+      <workItem from="1690088473180" duration="8723000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1690088158344</created>
@@ -216,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690088719317</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="initial commit">
+      <created>1690093768011</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1690093768011</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,5 +309,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ilyoniss/module3final/gameobjects/Quiz.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
