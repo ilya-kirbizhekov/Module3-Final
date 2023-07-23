@@ -15,14 +15,15 @@ import java.io.IOException;
 public class TextGameServlet extends HttpServlet{
     private static final long serialVersionUID = 1L;
     private Question currentQuestion;
+    private QuestionRepository questionRepository;
+
     @Override
     public void init() throws ServletException {
         super.init();
         // Initialize the question repository and get the starting question by its ID
-        QuestionRepository questionRepository = new QuestionRepository();
+        questionRepository = new QuestionRepository();
         currentQuestion = questionRepository.getQuestion("q1");
     }
-
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String userChoice = request.getParameter("userChoice");
@@ -33,22 +34,21 @@ public class TextGameServlet extends HttpServlet{
                 currentQuestion = selectedAnswer.getNextQuestion();
                 if (currentQuestion == null) {
                     // Game over
-                    request.setAttribute("message", "Congratulations! You've completed the game.");
+                    request.setAttribute("question", currentQuestion);
                     request.getRequestDispatcher("/index.jsp").forward(request, response);
                     return;
+
                 }
             } else {
                 // Game over
+                request.setAttribute("question", currentQuestion);
                 request.setAttribute("message", "Incorrect answer! Game over.");
                 request.getRequestDispatcher("/index.jsp").forward(request, response);
                 return;
             }
         }
 
-        // Display the next question and answers
-        request.setAttribute("question", currentQuestion);
-        request.setAttribute("message", "");
-        request.getRequestDispatcher("/index.jsp").forward(request, response);
+
     }
 
 }

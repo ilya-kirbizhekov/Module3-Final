@@ -17,7 +17,7 @@ public class Quiz {
 
             }
 
-            int userChoice = 2; // TO DO get from servlet
+            int userChoice = 1; // TO DO get from servlet
 
             Answer selectedAnswer = answers[userChoice - 1];
             if (selectedAnswer.isCorrect()){
