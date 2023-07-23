@@ -1,11 +1,11 @@
 package com.ilyoniss.module3final.gameobjects;
 
 public class Answer {
-    private String answerText;
-    private boolean isCorrect;
-    private Question nextQuestion;
+    private final String answerText;
+    private final boolean isCorrect;
+    private final Question nextQuestion;
 
-    private Action action;
+    private final Action action;
 
     public Answer(String answerText, boolean isCorrect, Question nextQuestion, Action action) {
         this.answerText = answerText;
@@ -29,8 +29,7 @@ public class Answer {
         return nextQuestion;
     }
 
-    public Question setNextQuestion(Question nextQuestion) {
-        return nextQuestion;
+    public void setNextQuestion(Question nextQuestion) {
     }
 
     public Action getAction()

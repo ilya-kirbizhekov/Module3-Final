@@ -2,12 +2,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>UFO GAME</title>
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+<h1>UFO GAME</h1>
+<form action="TextGameServlet" method="post">
+    <c:forEach var="answer" items="${question.answers}" varStatus="status">
+        <input type="radio" name="userChoice" value="${status.index}" id="answer${status.index}" />
+        <label for="answer${status.index}">${answer.answerText}</label><br>
+    </c:forEach>
+    <input type="submit" value="ответить">
+</form>
+<p>${question.questionText}</p>
+<p>${message}</p>
 </body>
 </html>

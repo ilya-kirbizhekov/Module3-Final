@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class QuestionRepository {
-    private Map<String, Question> questionMap;
+    private final Map<String, Question> questionMap;
 
     public QuestionRepository() {
         questionMap = new HashMap<>();
@@ -24,28 +24,30 @@ public class QuestionRepository {
     // Method to initialize the questions and answers
     private void initializeQuestions() {
         // Create the questions and answers
+        //isCorrect means, link to next question
         Question q1 = new Question("Ты потерял память. Принять вызов НЛО?", new Answer[]{
-                new Answer("Принять вызов", false, null,
+                new Answer("Принять вызов", true, null,
                         new Action("")),
-                new Answer("Отклонить вызов", true, null,
+                new Answer("Отклонить вызов", false, null,
                         new Action("Ты отклонил вызов. Поражение."))
         });
         Question q2 = new Question("Ты принял вызов.Поднимаешься на мостик к капитану?", new Answer[]{
-                new Answer("Подняться на мостик", false, null,
+                new Answer("Подняться на мостик", true, null,
                         new Action("")),
-                new Answer("Отказаться подниматься на мостик", true, null,
+                new Answer("Отказаться подниматься на мостик", false, null,
                         new Action("Ты не пошел на переговоры. Поражение"))
         });
         Question q3 = new Question("Ты поднялся на мостик. Ты кто?", new Answer[]{
-                new Answer("Рассказать правду о себе.", false, null,
+                new Answer("Рассказать правду о себе.", true, null,
                         new Action("Тебя вернули домой. Победа.")),
-                new Answer("Солгать о себе.", true, null,
+                new Answer("Солгать о себе.", false, null,
                         new Action("Твою ложь разоблачили. Поражение"))
         });
 
         // Link the questions together based on correct answers
-        q1.getAnswers()[1].setNextQuestion(q2);
-        q2.getAnswers()[1].setNextQuestion(q3);
+        // Rules
+        q1.getAnswers()[0].setNextQuestion(q2);
+        q2.getAnswers()[0].setNextQuestion(q3);
 
 
         // Add the questions to the repository

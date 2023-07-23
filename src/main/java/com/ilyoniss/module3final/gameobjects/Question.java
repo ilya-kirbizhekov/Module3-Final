@@ -1,8 +1,8 @@
 package com.ilyoniss.module3final.gameobjects;
 
 public class Question {
-    private String questionText;
-    private Answer[] answers;
+    private final String questionText;
+    private final Answer[] answers;
 
     public Question(String questionText, Answer[] answers) {
         this.questionText = questionText;

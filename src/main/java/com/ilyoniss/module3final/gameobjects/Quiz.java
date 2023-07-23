@@ -3,7 +3,7 @@ package com.ilyoniss.module3final.gameobjects;
 public class Quiz {
     // game constructor
 
-    public static Question PlayGame(Question startQuestion)
+    public static void PlayGame(Question startQuestion)
     {
         Question currentQuestion = startQuestion;
         while (currentQuestion != null)
@@ -14,6 +14,7 @@ public class Quiz {
             for (int i = 0; i < answers.length; i++)
             {
                 System.out.println((i + 1) + " . " + answers[i].getAnswerText());
+
             }
 
             int userChoice = 2; // TO DO get from servlet
@@ -37,6 +38,5 @@ public class Quiz {
 
         }
 
-        return currentQuestion;
     }
 }
