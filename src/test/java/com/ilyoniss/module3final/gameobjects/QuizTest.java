@@ -26,6 +26,9 @@ class QuizTest {
     @Test
     void testGame()
     {
+      QuestionRepository questionRepository = new QuestionRepository();
+      Question startQuestion = questionRepository.getQuestion("q1");
+      Quiz.PlayGame(startQuestion);
 
     }
 

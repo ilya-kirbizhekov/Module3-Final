@@ -10,10 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1f0bfcf-82bb-4219-bec8-388f0baf2aef" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ilyoniss/module3final/gameobjects/Quiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ilyoniss/module3final/gameobjects/QuizTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ilyoniss/module3final/gameobjects/QuestionRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ilyoniss/module3final/gameobjects/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ilyoniss/module3final/gameobjects/Answer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ilyoniss/module3final/gameobjects/QuizTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ilyoniss/module3final/gameobjects/QuizTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -71,7 +70,7 @@
       <recent name="com.ilyoniss.module3final.gameobjects" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.QuizTest.testPlayGameWithCorrectAnswer">
+  <component name="RunManager" selected="JUnit.QuizTest.testGame">
     <configuration name="QuizTest.playGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Module3-Final" />
       <extension name="coverage">
@@ -208,8 +207,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.QuizTest.testPlayGameWithCorrectAnswer" />
         <item itemvalue="JUnit.QuizTest.testGame" />
+        <item itemvalue="JUnit.QuizTest.testPlayGameWithCorrectAnswer" />
         <item itemvalue="JUnit.QuizTest.playGame" />
       </list>
     </recent_temporary>
@@ -224,7 +223,7 @@
       <updated>1690087828045</updated>
       <workItem from="1690087829058" duration="517000" />
       <workItem from="1690088358163" duration="42000" />
-      <workItem from="1690088473180" duration="8723000" />
+      <workItem from="1690088473180" duration="10460000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1690088158344</created>
@@ -289,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690093768011</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="initial commit">
+      <created>1690098068400</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1690098068400</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,16 +315,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ilyoniss/module3final/gameobjects/Quiz.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
