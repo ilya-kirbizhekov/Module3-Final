@@ -18,4 +18,15 @@ public class Question {
     {
         return answers;
     }
+
+    public void executeAction(int answerIndex)
+    {
+        Answer selectedAnswer = answers[answerIndex];
+        Action action = selectedAnswer.getAction();
+        if (action!=null)
+        {
+            action.performAction();
+        }
+    }
+
 }

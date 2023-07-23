@@ -5,10 +5,14 @@ public class Answer {
     private boolean isCorrect;
     private Question nextQuestion;
 
-    public Answer(String answerText, boolean isCorrect, Question nextQuestion) {
+    private Action action;
+
+    public Answer(String answerText, boolean isCorrect, Question nextQuestion, Action action) {
         this.answerText = answerText;
         this.isCorrect = isCorrect;
         this.nextQuestion = nextQuestion;
+        this.action = action;
+
     }
 
     public String getAnswerText()
@@ -27,5 +31,10 @@ public class Answer {
 
     public Question setNextQuestion(Question nextQuestion) {
         return nextQuestion;
+    }
+
+    public Action getAction()
+    {
+        return action;
     }
 }
