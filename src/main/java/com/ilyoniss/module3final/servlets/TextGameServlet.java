@@ -41,7 +41,8 @@ public class TextGameServlet extends HttpServlet{
                 }
             } else {
                 // Game over
-                request.setAttribute("question", currentQuestion);
+                request.setAttribute("answer", selectedAnswer);
+                request.setAttribute("result", selectedAnswer.getAction().getActionText());
                 request.setAttribute("message", "Incorrect answer! Game over.");
                 request.getRequestDispatcher("/index.jsp").forward(request, response);
                 return;

@@ -17,6 +17,8 @@
     </c:forEach>
     <input type="submit" value="ответить">
 </form>
+<h2>${answer.answerText}</h2>
+<h2>${result}</h2>
 
 </body>
 </html>
