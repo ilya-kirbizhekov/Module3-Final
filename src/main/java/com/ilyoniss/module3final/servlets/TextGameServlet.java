@@ -13,7 +13,6 @@ import java.io.IOException;
 
 @WebServlet("/TextGameServlet")
 public class TextGameServlet extends HttpServlet{
-    private static final long serialVersionUID = 1L;
     private Question currentQuestion;
 
     @Override
@@ -27,26 +26,27 @@ public class TextGameServlet extends HttpServlet{
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String userChoice = request.getParameter("userChoice");
         if (userChoice != null) {
+            // from radio button, selected radiobutton id
             int choiceIndex = Integer.parseInt(userChoice);
+            //get answer from repository
             Answer selectedAnswer = currentQuestion.getAnswers()[choiceIndex];
+            // if answer is correct, meaning linked to next answer (allow to ask next question)
             if (selectedAnswer.isCorrect()) {
+                // get next question
                 currentQuestion = selectedAnswer.getNextQuestion();
-
+                // end of game
                 if (currentQuestion == null) {
                     // end of map
                     request.setAttribute("answer", selectedAnswer);
                     request.setAttribute("result", selectedAnswer.getAction().getActionText());
                     request.getRequestDispatcher("/index.jsp").forward(request, response);
 
-
                 }
                 else {
-
                     request.setAttribute("question", currentQuestion);
                     request.setAttribute("message", "");
                     request.getRequestDispatcher("/index.jsp").forward(request, response);
                 }
-
 
             }
             else {
@@ -55,10 +55,8 @@ public class TextGameServlet extends HttpServlet{
                 request.setAttribute("result", selectedAnswer.getAction().getActionText());
                 request.setAttribute("message", "Incorrect answer! Game over.");
                 request.getRequestDispatcher("/index.jsp").forward(request, response);
-
             }
         }
-
 
     }
 
