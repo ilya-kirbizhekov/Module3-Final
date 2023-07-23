@@ -11,8 +11,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f1f0bfcf-82bb-4219-bec8-388f0baf2aef" name="Changes" comment="initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ilyoniss/module3final/gameobjects/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ilyoniss/module3final/gameobjects/Answer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ilyoniss/module3final/gameobjects/QuestionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ilyoniss/module3final/gameobjects/QuestionRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ilyoniss/module3final/servlets/TextGameServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ilyoniss/module3final/servlets/TextGameServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +232,7 @@
       <updated>1690087828045</updated>
       <workItem from="1690087829058" duration="517000" />
       <workItem from="1690088358163" duration="42000" />
-      <workItem from="1690088473180" duration="28688000" />
+      <workItem from="1690088473180" duration="31598000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1690088158344</created>
@@ -331,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690117153162</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="initial commit">
+      <created>1690118497729</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1690118497729</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,6 +362,9 @@
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="q1.answers" />
+      </configuration>
       <configuration name="JUnit">
         <watch expression="currentQuestion.getQuestionText()" language="JAVA" />
       </configuration>

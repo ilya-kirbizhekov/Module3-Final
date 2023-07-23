@@ -49,7 +49,6 @@ public class QuestionRepository {
         q1.getAnswers()[0].setNextQuestion(q2);
         q2.getAnswers()[0].setNextQuestion(q3);
 
-
         // Add the questions to the repository
         addQuestion("q1", q1);
         addQuestion("q2", q2);

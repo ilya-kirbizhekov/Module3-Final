@@ -15,13 +15,12 @@ import java.io.IOException;
 public class TextGameServlet extends HttpServlet{
     private static final long serialVersionUID = 1L;
     private Question currentQuestion;
-    private QuestionRepository questionRepository;
 
     @Override
     public void init() throws ServletException {
         super.init();
         // Initialize the question repository and get the starting question by its ID
-        questionRepository = new QuestionRepository();
+        QuestionRepository questionRepository = new QuestionRepository();
         currentQuestion = questionRepository.getQuestion("q1");
     }
     @Override
@@ -32,20 +31,31 @@ public class TextGameServlet extends HttpServlet{
             Answer selectedAnswer = currentQuestion.getAnswers()[choiceIndex];
             if (selectedAnswer.isCorrect()) {
                 currentQuestion = selectedAnswer.getNextQuestion();
+
                 if (currentQuestion == null) {
-                    // Game over
-                    request.setAttribute("question", currentQuestion);
+                    // end of map
+                    request.setAttribute("answer", selectedAnswer);
+                    request.setAttribute("result", selectedAnswer.getAction().getActionText());
                     request.getRequestDispatcher("/index.jsp").forward(request, response);
-                    return;
+
 
                 }
-            } else {
+                else {
+
+                    request.setAttribute("question", currentQuestion);
+                    request.setAttribute("message", "");
+                    request.getRequestDispatcher("/index.jsp").forward(request, response);
+                }
+
+
+            }
+            else {
                 // Game over
                 request.setAttribute("answer", selectedAnswer);
                 request.setAttribute("result", selectedAnswer.getAction().getActionText());
                 request.setAttribute("message", "Incorrect answer! Game over.");
                 request.getRequestDispatcher("/index.jsp").forward(request, response);
-                return;
+
             }
         }
 
