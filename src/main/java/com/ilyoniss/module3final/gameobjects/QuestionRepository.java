@@ -24,7 +24,7 @@ public class QuestionRepository {
     // Method to initialize the questions and answers
     private void initializeQuestions() {
         // Create the questions and answers
-        //isCorrect means, link to next question
+
         Question q1 = new Question("Ты потерял память. Принять вызов НЛО?", new Answer[]{
                 new Answer("Принять вызов", true, null,
                         new Action("")),
